@@ -2,5 +2,6 @@
 
 echo "environment"
 if [[ $BUILDKITE_PULL_REQUEST != "false" ]]; then
-  export BUILDKITE_REFSPEC=/refs/pull/$BUILDKITE_PULL_REQUEST/merge
+  export BUILDKITE_REFSPEC=refs/pull/$BUILDKITE_PULL_REQUEST/merge
+  export BUILDKITE_CHECKOUT_COMMIT=FETCH_HEAD
 fi
