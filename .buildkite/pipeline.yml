@@ -1,3 +1,4 @@
 steps:
   - label: "pretend to do tests"
+    key: "deploy"
     command: buildkite-agent oidc request-token --audience "hcp-vault" --lifetime 7200
