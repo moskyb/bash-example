@@ -1,4 +1,7 @@
 steps:
-  - label: "pretend to do tests"
-    key: "deploy"
-    command: sleep 400
+  - label: "🏔️"
+    key: "set-mountain"
+    command: .buildkite/steps/set-mountain.sh
+  - label: "🔍🏔️"
+    key: "get-mountain"
+    command: echo $$MOUNTAIN
