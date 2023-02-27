@@ -1,7 +1,4 @@
 steps:
   - label: "🏔️"
     key: "set-mountain"
-    command: .buildkite/steps/set-mountain.sh
-  - label: "🔍🏔️"
-    key: "get-mountain"
-    command: echo $$MOUNTAIN
+    command: echo $$BUILDKITE_AGENT_JOB_API_SOCKET
