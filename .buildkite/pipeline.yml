@@ -1,4 +1,4 @@
 steps:
-  - label: "🏔️"
-    key: "set-mountain"
-    command: echo $$BUILDKITE_AGENT_JOB_API_SOCKET
+  - label: ':file_cabinet: macOS permissions'
+    command: .buildkite/steps/test_mounted_network_drive_access.sh
+    timeout_in_minutes: 2
