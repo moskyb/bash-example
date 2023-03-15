@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
+export HELLO="hi there"
 
-echo "environment but also merge conflicts!"
-if [[ $BUILDKITE_PULL_REQUEST != "false" ]]; then
-  export BUILDKITE_REFSPEC=/refs/pull/$BUILDKITE_PULL_REQUEST/merge
-fi
+echo "!!!!!!!! ENVIRONMENT !!!!!!!!!!"
+
