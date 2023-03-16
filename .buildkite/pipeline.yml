@@ -1,5 +1,5 @@
 steps:
   - label: 'Test job API'
-    command: "echo 'hi there'"
+    command: "exit 1"
     plugins:
       - moskyb/job-api-test#main:
