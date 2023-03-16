@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-export HELLO="hi there"
-
-echo "!!!!!!!! ENVIRONMENT !!!!!!!!!!"
-

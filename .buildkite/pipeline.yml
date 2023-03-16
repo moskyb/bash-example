@@ -1,4 +1,5 @@
 steps:
-  - label: ':file_cabinet: macOS permissions'
-    command: .buildkite/steps/test_mounted_network_drive_access.sh
-    timeout_in_minutes: 2
+  - label: 'Test job API'
+    command: "echo 'hi there'"
+    plugins:
+      - moskyb/job-api-test#main:
