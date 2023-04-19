@@ -1,5 +1,3 @@
 steps:
   - label: 'Test job API'
-    command: "exit 1"
-    plugins:
-      - moskyb/job-api-test#main:
+    command: 'echo "Hi ABC! 🍎🐝🌊"'
