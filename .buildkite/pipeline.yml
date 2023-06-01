@@ -1,3 +1,3 @@
 steps:
-  - label: 'Test job API'
-    command: 'sleep 30'
+  - label: 'Pass'
+    command: 'exit 0'
