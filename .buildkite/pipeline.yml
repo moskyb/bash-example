@@ -1,3 +1,6 @@
 steps:
   - label: 'Pass'
-    command: 'echo "$$BUILDKITE_AGENT_ACCESS_TOKEN"'
+    commands: [
+      'echo "$$SUPER_SECRET_SEQUENCE_NAME"',
+      'echo "$$SUPER_SECRET_SEQUENCE_DATA"',
+    ]
