@@ -1,6 +1,3 @@
 steps:
-  - label: 'Pass'
-    commands: [
-      'echo "$$SUPER_SECRET_SEQUENCE_NAME"',
-      'echo "$$SUPER_SECRET_SEQUENCE_DATA"',
-    ]
+  - label: 'Fail'
+    commands: exit 1
