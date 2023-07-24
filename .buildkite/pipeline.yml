@@ -1,3 +1,12 @@
 steps:
-  - label: 'Fail'
-    commands: exit 7
+  - env:
+      FAIL: true
+    commands: "echo $$FAIL"
+
+  - env:
+      - FAIL: true
+    commands: "echo $$FAIL"
+
+  - env:
+      - "FAIL=true"
+    commands: "echo $$FAIL"
