@@ -1,7 +1,13 @@
+---
 steps:
-  - env:
-      FAIL: true
-    plugins:
-      - docker#v3.0.1:
-          image: "alpine:3.18"
-    commands: "echo hi there"
+- env:
+    FAIL: true
+  command: "haha, crimes, this signature won't match"
+  plugins:
+  - docker#v3.0.1:
+      image: alpine:3.18
+  signature:
+    value: 7ACikVQ9yRZe/YBd6bIwUGgWy3uO0ZNgJVk0PROJrNc=
+    algorithm: hmac-sha256
+    signed_fields:
+    - command
