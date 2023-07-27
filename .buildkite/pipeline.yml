@@ -1,12 +1,7 @@
 steps:
   - env:
       FAIL: true
-    commands: "echo $$FAIL"
-
-  - env:
-      - FAIL: true
-    commands: "echo $$FAIL"
-
-  - env:
-      - "FAIL=true"
-    commands: "echo $$FAIL"
+    plugins:
+      - docker#v3.0.1:
+          image: "alpine:3.18"
+    commands: "echo hi there"
