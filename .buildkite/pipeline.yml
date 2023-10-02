@@ -2,7 +2,12 @@
 steps:
 - env:
     FAIL: true
-  command: "echo 'hello, world!'"
+  command: "echo 'hello, {{matrix}}!'"
+  matrix:
+  - "world"
+  - "mars"
+  - "jupiter"
+  - "saturn"
   plugins:
   - docker#v3.0.1:
       image: alpine:3.18
