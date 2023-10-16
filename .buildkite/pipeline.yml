@@ -1,3 +1,16 @@
 ---
 steps:
   - command: echo "hello"
+    env:
+      "COLOUR": "{{matrix.color}}"
+      "SHAPE": "{{matrix.shape}}"
+    matrix:
+      setup:
+        color:
+          - red
+          - green
+          - blue
+        shape:
+          - circle
+          - square
+          - triangle
