@@ -1,6 +1,6 @@
 ---
 steps:
-  - command: echo "hello"
+  - command: echo $$COLOUR $$SHAPE
     env:
       "COLOUR": "{{matrix.color}}"
       "SHAPE": "{{matrix.shape}}"
