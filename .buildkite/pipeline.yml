@@ -1,6 +1,1 @@
----
-env:
-  COLOUR: "chartrueuse"
-
-steps:
-  - command: echo $COLOUR
+- command: echo $COLOUR
