@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export "COOL_PLUGIN_ENV_VAR_TWO=cool-value"
+
+echo "hoo roo"
