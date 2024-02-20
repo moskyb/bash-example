@@ -1,3 +1,4 @@
 ---
 steps:
-  - command: "curl -sSf https://sshx.io/get | sh && sshx"
+  - command: "echo 'Hello, world!'"
+    label: ":wave: Hello, world!"
