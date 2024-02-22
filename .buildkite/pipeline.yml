@@ -3,3 +3,4 @@ steps:
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
   - command: "echo 'a second command'"
+  - command: "echo 'a second command'"
