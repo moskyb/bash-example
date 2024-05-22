@@ -1,6 +1,12 @@
 ---
+env:
+  MOUNTAIN: cotopaxi
+
 steps:
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
-  - command: "echo $$PWD"
+  - command: "echo $MOUNTAIN"
+    label: ":mountain: Mountain"
+  - command: "echo $$MOUNTAIN"
+    label: ":mountain: Mountain Runtime"
   - command: "echo 'a second command'"
