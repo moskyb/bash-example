@@ -1,12 +1,8 @@
 ---
 env:
-  MOUNTAIN: cotopaxi
+  NOT_A_TOKEN: "sssssssssssssh!"
 
 steps:
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
-  - command: "echo $MOUNTAIN"
-    label: ":mountain: Mountain"
-  - command: "echo $$MOUNTAIN"
-    label: ":mountain: Mountain Runtime"
-  - command: "echo 'a second command'"
+  - command: source ./script.sh
