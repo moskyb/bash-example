@@ -1,8 +1,10 @@
 ---
+env:
+  AURORA_BAZEL_CONFIG_CI: "true"
+  QUEUE_CAPABILITIES: {"custom": true, "hooks_image": "experiment", "env": "staging"}
+
 steps:
   - command: "echo 'Hello, world!'"
-    env:
-      JSON: {"key": "this shouldn't work"}
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
   - command: source ./script.sh
