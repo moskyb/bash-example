@@ -2,3 +2,5 @@
 steps:
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
+  - command: "echo 'This is a second step.'"
+    label: ":2: Second Step"
