@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-export COOL_PLUGIN_ENV_VAR=cool-value
-
-echo "super butts"

@@ -1,6 +1,4 @@
 ---
 steps:
-  - key: oidc
-    command: ./oidc.sh
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
