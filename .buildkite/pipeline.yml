@@ -1,4 +1,24 @@
----
 steps:
-  - command: "echo 'Hello, world!'"
-    label: ":wave: Hello, world!"
+  - label: "Upload staging"
+    commands: |
+      buildkite-agent pipeline upload <<YAML
+        env:
+          PIPELINE_ENV: "staging"
+
+        steps:
+          - command: sleep 2 && echo $${PIPELINE_ENV} && echo 'staging'
+            depends_on: "upload-prod"
+            key: "staging-step"
+      YAML
+
+  - label: "Upload prod"
+    key: "upload-prod"
+    commands: |
+      buildkite-agent pipeline upload <<YAML
+        env:
+          PIPELINE_ENV: "prod"
+
+        steps:
+          - wait
+          - command: sleep 2 && echo $${PIPELINE_ENV} && echo 'prod'
+      YAML
