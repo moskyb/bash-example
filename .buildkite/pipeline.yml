@@ -1,4 +1,4 @@
 ---
 steps:
-  - command: "echo 'Hello, world!'"
+  - command: "sleep 600"
     label: ":wave: Hello, world!"
