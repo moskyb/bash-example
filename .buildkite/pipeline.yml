@@ -2,3 +2,11 @@
 steps:
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
+  - command: "buildkite-agent oidc request-token --audience someaudience --format jwt"
+    label: ":key: OIDC Token jwt"
+  - command: "buildkite-agent oidc request-token --audience someaudience --format gcp"
+    label: ":key: OIDC Token gcp"
+  - command: "buildkite-agent oidc request-token --audience someaudience --format jwt --skip-redaction"
+    label: ":key: OIDC Token jwt --skip-redaction"
+  - command: "buildkite-agent oidc request-token --audience someaudience --format gcp --skip-redaction"
+    label: ":key: OIDC Token gcp --skip-redaction"
