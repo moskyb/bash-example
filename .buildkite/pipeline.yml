@@ -2,3 +2,7 @@
 steps:
   - command: "echo 'Hello, world!'"
     label: ":wave: Hello, world!"
+    plugins:
+    - docker:
+        environment:
+         - 'AWS_SECRET_ACCESS_KEY="also not real"'
